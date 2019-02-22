@@ -5,12 +5,12 @@ function main () {
     e.preventDefault();
         this.classList.add('away');
         setTimeout(() => {
-            document.getElementById('form-content').remove();
+            document.getElementById('form-content').innerHTML = "<div></div><h5>Tu mensaje se ha enviado con exito</h5><div></div>";
             var submitButton = document.getElementById('submit');
             submitButton.classList.add('message');
             var text = submitButton.firstChild;
         
-            text.nodeValue = "Su mensaje ha sido entregado";
+            text.nodeValue = "Nos dedicamos a enviar cosas ¿qué esperabas?";
             this.classList.remove('away');
         }, 5000);
   });
