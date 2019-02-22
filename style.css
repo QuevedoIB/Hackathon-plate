@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  color: white;
   margin: 0;
   padding: 0;
   background-color: #4d7dad;
@@ -34,6 +35,15 @@ main {
   flex-direction: column;
 }
 
+#features-section > div {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .container-row {
   display: flex;
   align-items: center;
@@ -41,12 +51,20 @@ main {
 }
 
 .feature {
-  background: grey;
+  display: flex;
+  padding: 20px 50px;
+  flex-direction: column;
+  align-items: center;
   margin-right: 10px;
 }
 
+.feature + .feature {
+  margin: 0 50px;
+}
+
 section {
-  padding-top: 10px;
+  background: #504dad;
+  padding: 20px 0;
   height: 100%;
   min-width: 100vw;
 }
@@ -63,22 +81,24 @@ form input {
 
 form label {
   margin-bottom: 10px;
-  text-decoration: underline;
+  font-size: 26px;
 }
 
 form {
+  width: 100%;
   display: flex;
   height: 500px;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   position: relative;
   margin-left: 0;
   transition: all 1s ease-out 0s;
 }
 
-form > * {
-  max-width: 150px;
+form div {
+  display: flex;
+  flex-direction: column;
 }
 
 form .button {
@@ -87,12 +107,11 @@ form .button {
 }
 
 form button i:after {
-  margin: 0;
   content: " ";
   position: absolute;
-  bottom: -100px;
+  bottom: 0px;
   width: 200px;
-  left: 25px;
+  right: -125px;
   height: 80px;
   background-image: url("./pictures/dron_button.png");
   background-size: cover;
@@ -103,23 +122,61 @@ form button i:after {
 }
 form.away {
   transition: all 1s ease-out 2.6s;
-  margin-left: -300px;
+  margin-left: -2600px;
 }
 
 form.away button i:after {
-  bottom: 100%;
+  bottom: 600%;
+  right: 100px;
 }
-
+h5 {
+  font-size: 60px;
+  text-align: center;
+}
 #form-container {
   padding: 30px 0;
 }
 
-.message {
-  border: none;
-  background-color: transparent !important;
-  color: black;
+#form-content {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
+#form-content input,
+label,
+select {
+  width: 309px;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  background: #504dad;
+  height: 47px;
+}
+#form-content input,
+select,
+textarea {
+  border: 2px solid white;
+  color: white;
+}
+input::placeholder {
+  color: white;
+  font-size: 20px;
+}
+#form-content textarea {
+  width: 440px;
+  border-radius: 10px;
+  background: #504dad;
+  height: 290px;
+}
+
+.message {
+  border: none;
+
+  background-color: transparent !important;
+  color: white;
+}
 .button-submit {
   font-size: 25px;
   padding: 5px;
@@ -140,7 +197,25 @@ header {
   min-width: 100%;
   position: fixed;
 }
+.image1 {
+  background-image: url("pictures/feature_dron.png");
+  background-size: cover;
+  height: 182px;
+  width: 296px;
+}
 
+.image2 {
+  background-image: url("pictures/feature_face.png");
+  background-size: cover;
+  height: 181px;
+  width: 181px;
+}
+.image3 {
+  background-image: url("pictures/feature_track.png");
+  background-size: cover;
+  height: 181px;
+  width: 181px;
+}
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -152,6 +227,13 @@ header {
 
 .nav-bar a {
   text-decoration: none;
+  background: #504dad;
+}
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+}
+.nav-list li {
   color: white;
 }
 
@@ -164,6 +246,15 @@ header {
   display: inline-block;
   padding-right: 20px;
   color: white;
+}
+#submit {
+  margin-top: 20px;
+  padding: 33px 137px;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
 }
 
 #comment,
