@@ -35,6 +35,66 @@ body {
   }
 }
 
+body {
+  height:800px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  margin-left:0;
+  transition: all 1s ease-out 0s;
+}
+
+form > * {
+  max-width: 150px;
+}
+
+form .button {
+  padding: 5px 30px;
+  border-radius: 10px;
+}
+
+form button i:after{
+  margin: 0;
+  content: ' ';
+  position: absolute;
+  bottom: 0px;
+  width:50px;
+  height: 20px;
+  background-image: url("dron_100.png");
+  background-size: cover;
+  font-weight: normal;
+  font-style: normal;
+  margin:0px 0px 0px 15px;
+  text-decoration:none;
+  transition: all 2s ease 0s;
+}
+form.away {
+  transition: all 1s ease-out 2s;
+  margin-left: -300px;
+}
+
+form.away button i:after{
+  bottom:60%;
+  margin-left: -50px;
+}
+
+#form-container {
+  padding: 30px 0;
+}
+
+.message {
+  border: none;
+  background-color: transparent!important;
+  color: black;
+}
 /* ---- header ---- */
 
 /* ---- footer ---- */
