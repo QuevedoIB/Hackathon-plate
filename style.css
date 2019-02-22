@@ -34,6 +34,15 @@ main {
   flex-direction: column;
 }
 
+#features-section > div {
+  width: 70%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .container-row {
   display: flex;
   align-items: center;
@@ -41,8 +50,15 @@ main {
 }
 
 .feature{
-  background: grey;
+  display: flex;
+  padding: 20px 50px;
+  flex-direction: column;
+  align-items: center;
   margin-right: 10px;
+}
+
+.feature + .feature {
+  margin:0 50px;
 }
 
 section {
@@ -105,7 +121,7 @@ form button i:after{
 }
 form.away {
   transition: all 1s ease-out 2.6s;
-  margin-left: -2500px;
+  margin-left: -2600px;
 }
 
 form.away button i:after{
@@ -121,7 +137,7 @@ h5 {
 }
 
 #form-content {
-  width: 65%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -177,6 +193,26 @@ header {
   min-width: 100%;
   position: fixed;
   background: #504DAD;
+}
+
+.image1 {
+  background-image: url('pictures/feature_dron.png');
+  background-size: cover;
+  height: 182px;
+  width: 296px;
+}
+
+.image2 {
+  background-image: url('pictures/feature_face.png');
+  background-size: cover;
+  height: 181px;
+  width: 181px;
+}
+.image3 {
+  background-image: url('pictures/feature_track.png');
+  background-size: cover;
+  height: 181px;
+  width: 181px;
 }
 
 .nav-bar {
