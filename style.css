@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -19,13 +20,33 @@ body {
 /* ---- layout ---- */
 
 
+
 .container {
-  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.section {
-  margin-bottom: 20px;
-  padding-top: 20px;
+.container-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature{
+  background: grey;
+  margin-right: 20px;
+}
+
+section {
+  padding: 20px 0;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration:underline;
 }
 
 @media (min-width: 768px) {
@@ -35,18 +56,37 @@ body {
   }
 }
 
-body {
-  height:800px;
+/* ---- header ---- */
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: black;
+ }
+ 
+ .nav-list li {
+  color: white;
+  display: inline-block;
+  padding-right: 20px;
+ }
+
+form input{
+  margin-bottom: 15px;
 }
 
+form label{
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
 
 form {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  height: 300px;
-  width: 300px;
   position: relative;
   margin-left:0;
   transition: all 1s ease-out 0s;
@@ -65,25 +105,24 @@ form button i:after{
   margin: 0;
   content: ' ';
   position: absolute;
-  bottom: 0px;
-  width:50px;
-  height: 20px;
+  bottom: -100px;
+  width: 200px;
+  left: 25px;
+  height: 80px;
   background-image: url("dron_100.png");
   background-size: cover;
   font-weight: normal;
   font-style: normal;
-  margin:0px 0px 0px 15px;
   text-decoration:none;
-  transition: all 2s ease 0s;
+  transition: all 2s ease 1.5s;
 }
 form.away {
-  transition: all 1s ease-out 2s;
+  transition: all 1s ease-out 3.5s;
   margin-left: -300px;
 }
 
 form.away button i:after{
-  bottom:60%;
-  margin-left: -50px;
+  bottom:100%;
 }
 
 #form-container {
@@ -95,11 +134,26 @@ form.away button i:after{
   background-color: transparent!important;
   color: black;
 }
-/* ---- header ---- */
 
+.button-submit{
+  font-size: 25px;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+#comment, #user{
+  margin-bottom: 15px;
+ 
+}
 /* ---- footer ---- */
+footer ul {
+  list-style-type: none;
+}
 
+img{
+  width: 10%;
+  height: 10%;
+}
 /* ---- components ---- */
 
 /* ---- css shame ---- */
-
