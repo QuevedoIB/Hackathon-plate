@@ -19,7 +19,12 @@ body {
 
 /* ---- layout ---- */
 
-
+main {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 90vh;
+}
 
 .container {
   display: flex;
@@ -36,11 +41,15 @@ body {
 
 .feature{
   background: grey;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 section {
+  border: 3px solid blue;
+  background: red;
   padding: 20px 0;
+  height: 100%;
+  min-width: 100vw;
 }
 
 h4 {
@@ -48,30 +57,6 @@ h4 {
   font-weight: 600;
   text-decoration:underline;
 }
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 728px;
-    margin: 0 auto;
-  }
-}
-
-/* ---- header ---- */
-
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background: black;
- }
- 
- .nav-list li {
-  color: white;
-  display: inline-block;
-  padding-right: 20px;
- }
 
 form input{
   margin-bottom: 15px;
@@ -84,6 +69,7 @@ form label{
 
 form {
   display: flex;
+  height: 500px;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
@@ -109,15 +95,15 @@ form button i:after{
   width: 200px;
   left: 25px;
   height: 80px;
-  background-image: url("dron_100.png");
+  background-image: url("./pictures/dron_button.png");
   background-size: cover;
   font-weight: normal;
   font-style: normal;
   text-decoration:none;
-  transition: all 2s ease 1.5s;
+  transition: all 2s ease .6s;
 }
 form.away {
-  transition: all 1s ease-out 3.5s;
+  transition: all 1s ease-out 2.6s;
   margin-left: -300px;
 }
 
@@ -141,11 +127,50 @@ form.away button i:after{
   margin-top: 15px;
 }
 
+@media (min-width: 768px) {
+  .container {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+}
+
+/* ---- header ---- */
+
+header {
+  height: 10%;
+  min-width: 100%;
+  position: fixed;
+  background: black;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: black;
+ }
+ 
+ .nav-list li {
+  color: white;
+  display: inline-block;
+  padding-right: 20px;
+ }
+
+
+
 #comment, #user{
   margin-bottom: 15px;
  
 }
 /* ---- footer ---- */
+
+footer {
+  height: 10vh;
+  position: fixed;
+}
+
 footer ul {
   list-style-type: none;
 }
