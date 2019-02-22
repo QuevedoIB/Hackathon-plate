@@ -1,103 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Tunathon Barcelona 2018</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,800" rel="stylesheet" />
+  </head>
 
-<head>
-  <title>Tunathon Barcelona 2018</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,800" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-    <nav class="nav-bar">
-      <img src="pictures/image1"/>
-      <ul class="nav-list">
-        <li><a href="#intro-section">About Us</a></li>
-        <li><a href="#features-section">Features</a></li>
-        <li><a href="#contact-section">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="intro-section" class="container-row">
-      <div class="container-row">
-        <div class="intro-text">
-          <h1>TITULAR</h1>
-          <p>Hola qué tal</p>
-          <button>cta</button>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <img class="logo" src="./assets/logo.png" />
+        <ul class="nav-list">
+          <li><a href="#intro-section">About Us</a></li>
+          <li><a href="#features-section">Features</a></li>
+          <li><a href="#contact-section">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="intro-section" class="container-row">
+        <div class="container-row">
+          <div class="container intro-text">
+            <h1>
+              DE ORIGEN A<br />
+              DESTINO SIN SORPRESAS
+            </h1>
+            <p>
+              Sabemos que para tí es importante que tus paquetes lleguen en el momento adecuado a la persona adecuada.
+              Si quieres, te explicamos cómo.
+            </p>
+            <button class="start-button">Contact Us</button>
+          </div>
+          <img class="dron-image-intro" src="./assets/dron_home_ok.png" />
+          <img class="intro-image" src="./assets/city_home_ok.png" alt="imagen hero" />
         </div>
-        <img src="pictures/image1.png" alt="imagen hero">
-      </div>
-      
-    </section>
+      </section>
 
-    <section id="features-section" class="container-row" >
-      <article class="feature"> 
-        <img src="pictures/image1.png" alt="">
-        <h4>feature 1</h4>
-        <p>texto feature</p>
-      </article>
+      <section id="features-section" class="container-row">
+        <article class="feature">
+          <img src="pictures/image1.png" alt="" />
+          <h4>feature 1</h4>
+          <p>texto feature</p>
+        </article>
 
-      <article class="feature">
-        <img src="pictures/image1.png" alt="">
-        <h4>feature 1</h4>
-        <p>texto feature</p>
-      </article>
+        <article class="feature">
+          <img src="pictures/image1.png" alt="" />
+          <h4>feature 1</h4>
+          <p>texto feature</p>
+        </article>
 
-      <article class="feature">
-        <img src="pictures/image1.png" alt="">
-        <h4>feature 1</h4>
-        <p>texto feature</p>
-      </article>
+        <article class="feature">
+          <img src="pictures/image1.png" alt="" />
+          <h4>feature 1</h4>
+          <p>texto feature</p>
+        </article>
+      </section>
 
-    </section>
+      <section id="contact-section" class="container">
+        <form id="form" action="#" method="get">
+          <div id="form-content">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="nombre" />
 
-    <section id="contact-section" class="container">
+            <label for="surname">Surname</label>
+            <input id="surname" type="text" placeholder="Surname" />
 
-      <form id="form" action="#" method="get">
-        <div id="form-content">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="eMail" />
 
-        <label for="name">Name</label>
-        <input id="name" type="text" placeholder="nombre">
+            <label for="telephone">Telephone</label>
+            <input id="telephone" type="text" placeholder="telephone" />
 
-        <label for="surname">Surname</label>
-        <input id="surname" type="text" placeholder="Surname">
+            <label for="user">Type of user</label>
+            <select id="user" name="" id="">
+              <option value="Customer">Customer</option>
+              <option value="Bussiness">Bussiness</option>
+            </select>
 
-        <label for="email">Email</label>
-        <input type="text" id="email" placeholder="eMail">
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="" placeholder="Enter your comments here" id="" cols="30" rows="10"> </textarea>
+          </div>
+          <button id="submit">Submit<i></i></button>
+        </form>
+      </section>
+    </main>
 
-        <label for="telephone">Telephone</label>
-        <input id="telephone" type="text" placeholder="telephone">
+    <footer>
+      <ul>
+        <li><img src="" alt="" /></li>
+        <li><img src="" alt="" /></li>
+        <li><img src="" alt="" /></li>
+        <li>Distopia ©2019</li>
+      </ul>
+    </footer>
 
-        <label for="user">Type of user</label>
-        <select id="user" name="" id="">
-          <option value="Customer">Customer</option>
-          <option value="Bussiness">Bussiness</option>
-        </select>
-
-        <label for="comment">Comment</label>
-        <textarea id="comment" name="" placeholder="Enter your comments here" id="" cols="30" rows="10">
-        </textarea>
-      </div>
-      <button id="submit">Submit<i></i></button>
-    </form>
-    </section>
-
-  </main>
-
-  <footer>
-    <ul>
-      <li><img src="" alt=""></li>
-      <li><img src="" alt=""></li>
-      <li><img src="" alt=""></li>
-      <li>Distopia ©2019</li>
-    </ul>
-
-  </footer>
-
-  <script src="main.js"></script>
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>

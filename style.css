@@ -2,25 +2,26 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-color: #4d7dad;
 }
 
-
 /* ---- typography ---- */
-
 
 /* ---- layout ---- */
 
 main {
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   height: 90vh;
@@ -39,15 +40,13 @@ main {
   justify-content: center;
 }
 
-.feature{
+.feature {
   background: grey;
   margin-right: 10px;
 }
 
 section {
-  border: 3px solid blue;
-  background: red;
-  padding: 20px 0;
+  padding-top: 10px;
   height: 100%;
   min-width: 100vw;
 }
@@ -55,14 +54,14 @@ section {
 h4 {
   font-size: 20px;
   font-weight: 600;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
-form input{
+form input {
   margin-bottom: 15px;
 }
 
-form label{
+form label {
   margin-bottom: 10px;
   text-decoration: underline;
 }
@@ -74,7 +73,7 @@ form {
   justify-content: flex-end;
   align-items: center;
   position: relative;
-  margin-left:0;
+  margin-left: 0;
   transition: all 1s ease-out 0s;
 }
 
@@ -87,9 +86,9 @@ form .button {
   border-radius: 10px;
 }
 
-form button i:after{
+form button i:after {
   margin: 0;
-  content: ' ';
+  content: " ";
   position: absolute;
   bottom: -100px;
   width: 200px;
@@ -99,16 +98,16 @@ form button i:after{
   background-size: cover;
   font-weight: normal;
   font-style: normal;
-  text-decoration:none;
-  transition: all 2s ease .6s;
+  text-decoration: none;
+  transition: all 2s ease 0.6s;
 }
 form.away {
   transition: all 1s ease-out 2.6s;
   margin-left: -300px;
 }
 
-form.away button i:after{
-  bottom:100%;
+form.away button i:after {
+  bottom: 100%;
 }
 
 #form-container {
@@ -117,11 +116,11 @@ form.away button i:after{
 
 .message {
   border: none;
-  background-color: transparent!important;
+  background-color: transparent !important;
   color: black;
 }
 
-.button-submit{
+.button-submit {
   font-size: 25px;
   padding: 5px;
   margin-top: 15px;
@@ -140,7 +139,6 @@ header {
   height: 10%;
   min-width: 100%;
   position: fixed;
-  background: black;
 }
 
 .nav-bar {
@@ -149,20 +147,28 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: black;
- }
- 
- .nav-list li {
+  background-color: #254d76;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+
+.nav-list li {
   color: white;
   display: inline-block;
   padding-right: 20px;
- }
+  color: white;
+}
 
-
-
-#comment, #user{
+#comment,
+#user {
   margin-bottom: 15px;
- 
 }
 /* ---- footer ---- */
 
@@ -174,11 +180,97 @@ footer {
 footer ul {
   list-style-type: none;
 }
+/* ---- components ---- */
+.start-button {
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  color: #4d7dad;
+  border-radius: 5px;
+  font-weight: 800;
+}
 
-img{
+.start-button:hover {
+  background-color: #254d76;
+  color: white;
+}
+/* }
+.start-button:active,
+.start-button:focus {
+  background: darken(#fe5f55, 30%);
+}
+.start-button:after {
+  content: "\F054";
+}
+.start-button:hover:after {
+  -webkit-animation: bounceright 0.3s alternate ease infinite;
+  animation: bounceright 0.3s alternate ease infinite;
+} */
+
+.intro-text {
+  text-align: center;
+  width: 400px;
+  margin-right: 75px;
+  margin-left: 20px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.logo {
   width: 10%;
   height: 10%;
 }
-/* ---- components ---- */
+
+.logo:hover {
+  border-bottom: 1px solid white;
+}
+
+img {
+  width: 50%;
+  height: 50%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 54px;
+  font-weight: 800;
+  color: white;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  margin-bottom: 40px;
+}
+
+#intro-section {
+  margin-top: 70px;
+}
+
+.dron-image-intro {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  margin-left: 220px;
+  -webkit-animation: floatBubble 2s infinite normal ease-out;
+  animation: floatBubble 2s infinite normal ease-out;
+}
+
+@-webkit-keyframes dron {
+  0% {
+    top: 500px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes dron {
+  0% {
+    top: 500px;
+  }
+  100% {
+    top: 0px;
+  }
+}
 
 /* ---- css shame ---- */
